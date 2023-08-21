@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(90, 88, 172);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  transition: .4s;
+  background: transparent;
+  color: inherit;
+}
+
+.container {
+  width: 20rem;
+  padding: 1rem 2rem;
+  background: white;
+}
+
+.game-container {
+  .progress {
+    width: 100%;
+    height: 0.7rem;
+    span {
+      height: 100%;
+      border-radius: 0.2rem;
+      display: block;
+      background: linear-gradient(135deg, #C55AE0, #6701A4);
+    }
+  }
+  h3 {
+    margin-top: 1rem;
+    font-size: 2;
+  }
+  .answer-list {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    .answer-item{
+      border-radius: 0.2rem;
+      width: 100%;
+      border: 2px black solid;
+      padding: 0.5rem 1rem;
+      &:hover {
+        transform: scale(1.1);
+        transition: .4s;
+      }
+    }
+  }
+}
+
+.result-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  button {
+    margin-top: 2rem;
+    border: #6701A4;
+    background: linear-gradient(135deg, rgba(90, 131, 224, 1.0), rgba(222, 1, 182, 1.0));
+    padding: 0.5rem 1rem;
+    color: whitesmoke;
+    border-radius: 0.2rem;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 750px) {
+  body {
+    height: 50vh;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+  body {
+    height: 30vh;
+  }
+}
+@media (max-width: 260px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    height: 20vh;
+  }
+}
